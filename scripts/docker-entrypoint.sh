@@ -38,5 +38,5 @@ if command -v smbd &>/dev/null; then
     smbd --daemon --no-process-group || echo "[WARN] smbd failed to start"
 fi
 
-echo "[INFO] Starting SambaGuard on :${PORT:-8080}"
+echo "[INFO] Starting SambaGuard on :${PORT:-8090}"
 exec /usr/local/bin/sambaguard "$@"
